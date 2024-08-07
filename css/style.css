@@ -1,0 +1,178 @@
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 1920px;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  border-bottom: solid 10px #000000;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 110px;
+  background-color: rgba(246, 224, 224, 0.4);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: rgba(60, 55, 55, 0.25);
+}
+.menu {
+  position: relative;
+  width: 952px;
+  height: 37px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  left: 35%;
+}
+
+.home {
+  position: relative;
+  display: flex;
+}
+
+.bg {
+  position: relative;
+  width: 905px;
+  height: 780px;
+  padding-top: 300px;
+  /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+  border: none solid transparent;
+}
+
+.one {
+  position: absolute;
+  z-index: 12;
+  width: 500px;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 250px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+.one::before {
+  content: "";
+  position: absolute;
+  top: 50px; /* 그림자의 위치를 조정 */
+  left: 50px;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  border-radius: 50%;
+  z-index: -1;
+}
+/*     position: absolute;
+    z-index: 12;
+    width: 500px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 250px;
+    background-color: #000000;
+    border-radius: 50%; */
+.ment {
+  position: relative;
+  margin-top: 350px;
+}
+h3 {
+  font-size: 100px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 120px;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  margin-top: 100px;
+  margin-right: 100px;
+  margin-left: 220px;
+}
+.section1 {
+  display: flex;
+  justify-content: space-between;
+}
+.section1-1 {
+  position: relative;
+  width: 1550px;
+  height: 490px;
+  top: -10%;
+  margin-left: 185px;
+}
+.proprofile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  width: 367px;
+  height: 83px;
+
+  position: relative;
+  text-align: center;
+}
+.mainment {
+  position: relative;
+  margin-top: 220px;
+}
+.first {
+  position: relative;
+  /* width: 830px; */
+  display: flex;
+  height: 94px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.point {
+  margin: 0;
+}
+.subment {
+  position: relative;
+  font-size: 30px;
+}
+.index {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  font-size: 32px;
+
+  top: 20%;
+  left: -85px;
+}
+.index p {
+  font-weight: 600;
+}
+.skill {
+  position: relative;
+}
+.skill p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.section1-2 {
+  position: relative;
+}
+.section1-2 img {
+  position: relative;
+  margin-top: 200px;
+  margin-right: 185px;
+}
