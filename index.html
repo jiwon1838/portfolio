@@ -7,81 +7,162 @@
     <link rel="stylesheet" href="css/nomalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/global.css" />
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <div class="wrap">
       <!-- main start -->
       <div class="section">
         <!-- header start -->
-        <header>
-<!-- header end -->
+        <div class="header">
           <ul class="menu">
             <li>
-              <a href="">HOME</a>
+              <a href="#home">HOME</a>
             </li>
             <li>
-              <a href="">PROFILE</a>
+              <a href="#profile">PROFILE</a>
+            </li>
+             <li>
+              <a href="#design">DESIGN</a>
             </li>
             <li>
-              <a href="">CODING</a>
+              <a href="#coding">CODING</a>
             </li>
+           
             <li>
-              <a href="">DESIGN</a>
-            </li>
-            <li>
-              <a href="">CONTACT</a>
+              <a href="#contact">CONTACT</a>
             </li>
           </ul>
-        </header>
-        <div class="home">
-          <div class="bg">
-            <div class="one"></div>
         </div>
-            <div class="ment">
-              <h3>UI/UX DESIGNER</h3>
-              <h2>SHIN JI WON</h2>
-            
+        <!-- header end -->
+
+        <div class="home">
+          <!-- <div class="bg"></div> -->
+          <div class="one"></div>
+          <div class="ment">
+            <h3>UI/UX DESIGNER</h3>
+            <h2>SHIN JI WON</h2>
           </div>
         </div>
       </div>
       <!-- main end -->
 
-       <!-- profile start -->
+      <!-- profile start -->
 
-         
-       <div class="section">
-        <div class="proprofile">
-          <h3 class="profile">PROFILE</h3> 
+      <div class="section">
+        <div id="profile" class="proprofile" data-aos="fade-right">
+        <h3 class="profile">PROFILE</h3>
+      </div>
+      <div class="section1">
+        <div class="section1-1">
+          <div class="mainment">
+            <div class="typewriter">
+              <p id="typing-text"></p>
+            </div>
+            <span class="subment"
+              >성취감에 중독된 저는 매일 새로운 목표를 향해 나아갑니다.
+              <br />성취감 마저 즐기며, 더 큰 목표를 향해 나아가는 디자이너가
+              되겠습니다.</span
+            >
+          </div>
+          <div class="index">
+            <div class="skill">
+              <p>SKILL</p>
+              <img src="images/skill.png" alt="" />
+            </div>
+            <div class="contact">
+              <p>CONTACT ME <i></i></p>
+              <div class="call">
+              <span> 010-7252-0991 <br />jw1838@naver.com </span>
+            </div>
+          </div>
+          </div>
         </div>
-        <div class="section1">
-<div class="section1-1">
-  <div class="mainment">
-    <div class="first"><p class="point">도파민중독</p>신지원입니다.</div>
-    <span class="subment">성취감에 중독된 저는 매일 새로운 목표를 향해 나아갑니다. <br>성취감 마저 즐기며, 더 큰 목표를 향해 나아가는 디자이너가 되겠습니다.</span>
-</div>
-<div class="index">
-  <div class="skill">
-    <p>SKILL</p>
-    <img src="images/Group 2.png" alt="">
-  </div>
-  <div class="contact">
-    <p>CONTACT ME <i></i></p>
-    <span>
-      010-7252-0991 <br>jw1838@naver.com
-    </span>
-  </div>
-</div>
-</div>
-<!-- 프로필 사진 -->
-<div class="section1-2">
-<img src="images/profile.png" alt="">
-</div>
-</div>
-
-
-   </div>
+        <!-- 프로필 사진 -->
+        <div class="section1-2">
+          <img src="images/profile.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="section3">
+      <!-- 상단영역 -->
+      <div class="content">
+        <div class="one1"></div>
+        <span class="work">WORK</span>
+          </div>
+          <!-- 컨텐츠영역 -->
+        <div class="mycontents">
+          <div id="DESIGN" class="webdesign" data-aos="fade-right">
+            <span>WEB</span>
+            <ul class="websubmenu">
+             <li>
+              <a href=""><img src="images/hw.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="images/publicbeacon.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="images/veganiety.png" alt=""></a>
+            </li>
+            </ul>
+          </div>
+          <div id="app" class="app" data-aos="fade-right">
+            <span>APP</span>
+            <ul class="appsubmenu">
+             <li>
+              <a href=""><img src="images/app1.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="images/app2.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="images/app3.png" alt=""></a>
+            </li>
+            </ul>
+          </div>
+          <div id="coding" class="coding" data-aos="fade-right">
+            <span>CODING</span> 
+            <ul class="codingsubmenu">
+              <li>
+                <a href=""><img src="im" alt=""></a>
+              </li>
+              <li>
+                <a href=""><img src="" alt=""></a>
+              </li>
+              <li>
+                <a href="#kakao"><img src="images/kakaoblog.png" alt=""></a>
+               <div class="btg"><div class="button"><a href="">원본사이트</a></div>
+               <div class="button"><a href="">클론코딩</a></div>
+              </div>
+              </li>
+              
+             
+            </ul>
+        </div>
+        <div id="design" class="design" data-aos="fade-right">
+          <span>DESIGN</span> 
+          <ul class="designsubmenu">
+            <li>
+              <a href=""><img src="images/design1.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="images/design2.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="images/design3.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="images/design4.png" alt=""></a>
+            </li>
+            
+           
+          </ul>
+      </div>
+        </div>
+        
+    </div>
   </body>
 </html>

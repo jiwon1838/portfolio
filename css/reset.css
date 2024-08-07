@@ -1,8 +1,0 @@
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none; /* 밑줄 제거 */
-  color: inherit; /* 링크 색상을 부모 요소와 동일하게 */
-  font-weight: normal;
-}

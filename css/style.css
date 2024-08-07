@@ -1,44 +1,72 @@
-body {
+/* body {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 1920px;
-}
+} */
 
 .wrap {
   position: relative;
+  width: 100%;
   margin: 0 auto;
 }
 
 .section {
   position: relative;
-  width: 1920px;
-  height: 1080px;
-  border-bottom: solid 10px #000000;
+  border-bottom: solid 10px #fff;
+  background-color: #000000;
+  color: #fff;
 }
-
-header {
+/* .section1{
+  position: relative;
+  border-bottom: solid 10px #000000;
+  background-color: #000000;
+  color: #fff;
+} */
+.header {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 110px;
-  background-color: rgba(246, 224, 224, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   box-shadow: rgba(60, 55, 55, 0.25);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0.9;
+}
+
+.slide-up {
+  transform: translateY(-100%); /* 요소를 위로 슬라이드 */
+}
+
 .menu {
   position: relative;
+  z-index: 999;
   width: 952px;
   height: 37px;
   font-size: 30px;
+  font-weight: 600;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   left: 35%;
 }
-
+.menu :hover {
+  color: #fff;
+}
 .home {
   position: relative;
   display: flex;
@@ -46,60 +74,73 @@ header {
 
 .bg {
   position: relative;
-  width: 905px;
-  height: 780px;
-  padding-top: 300px;
+  width: 500px;
+  height: 500px;
+  padding-top: 500px;
   /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
   border: none solid transparent;
 }
 
 .one {
-  position: absolute;
-  z-index: 12;
+  position: relative;
   width: 500px;
   height: 500px;
-  margin-top: 30px;
+  margin-top: 300px;
   margin-left: 250px;
   background-color: #000000;
   border-radius: 50%;
+  box-shadow: 0 0 20px, 20px 0 80px #f0f, -20px 0 80px #0ff, inset 0 0 50px #fff,
+    inset -50px 0 80px #f0f, inset 50px 0 80px #0ff, inset -50px 0 300px #f0f,
+    inset 50px 0 300px #0ff;
+  animation: rotate 10s linear infinite;
 }
-.one::before {
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* .one::before {
   content: "";
   position: absolute;
-  top: 50px; /* 그림자의 위치를 조정 */
+  top: 50px; 
   left: 50px;
   width: 600px;
   height: 600px;
   background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   border-radius: 50%;
   z-index: -1;
-}
+} */
+
 /*     position: absolute;
-    z-index: 12;
-    width: 500px;
-    height: 500px;
-    margin-top: 30px;
-    margin-left: 250px;
-    background-color: #000000;
-    border-radius: 50%; */
+     z-index: 12;
+     width: 500px;
+     height: 500px;
+     margin-top: 30px;
+     margin-left: 250px;
+     background-color: #000000;
+     border-radius: 50%; */
 .ment {
   position: relative;
   margin-top: 350px;
+  margin-left: 200px;
 }
 h3 {
   font-size: 100px;
-  margin: 0 auto;
 }
 h2 {
   font-size: 120px;
-  margin: 0 auto;
 }
 
 .section {
   position: relative;
-  margin-top: 100px;
-  margin-right: 100px;
-  margin-left: 220px;
+  width: 100%;
+  height: 100vh;
+  /* margin-top: 100px; */
+  /* margin-right: 100px; */
+  /* margin-left: 220px; */
 }
 .section1 {
   display: flex;
@@ -107,9 +148,9 @@ h2 {
 }
 .section1-1 {
   position: relative;
-  width: 1550px;
+  /* width: 1550px; */
   height: 490px;
-  top: -10%;
+  /* top: -10%; */
   margin-left: 185px;
 }
 .proprofile {
@@ -121,24 +162,44 @@ h2 {
 .profile {
   width: 367px;
   height: 83px;
-
+  margin-top: 100px;
   position: relative;
   text-align: center;
 }
 .mainment {
   position: relative;
-  margin-top: 220px;
+  margin-top: 150px;
 }
-.first {
+/* .first {
   position: relative;
-  /* width: 830px; */
   display: flex;
   height: 94px;
   font-size: 80px;
   font-weight: bold;
   line-height: 30px;
   margin-bottom: 20px;
+} */
+
+.typewriter {
+  font-size: 80px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  width: fit-content;
+  animation: blink-caret 0.75s step-end infinite;
 }
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
 .point {
   margin: 0;
 }
@@ -161,6 +222,7 @@ h2 {
 }
 .skill {
   position: relative;
+  line-height: 90px;
 }
 .skill p {
   position: relative;
@@ -168,6 +230,14 @@ h2 {
   justify-content: center;
   text-align: center;
 }
+.contact {
+  position: relative;
+}
+.call {
+  position: relative;
+  margin-top: 20px;
+}
+
 .section1-2 {
   position: relative;
 }
@@ -175,4 +245,98 @@ h2 {
   position: relative;
   margin-top: 200px;
   margin-right: 185px;
+}
+
+/* work page */
+.section3 {
+  height: 100%;
+  background-color: black;
+  color: #fff;
+  padding-top: 123px;
+}
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+  padding: 0 220px;
+}
+.one1 {
+  position: relative;
+
+  width: 254px;
+  height: 254px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff;
+  /* animation: rotate 10s linear infinite; */
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.work {
+  position: absolute;
+  font-size: 60px;
+  text-align: center;
+  transform: translateX(-25px) translateY(px);
+}
+.coding {
+  margin-top: 160px;
+}
+.mycontents {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 160px;
+  /* margin-left: 220px; */
+  gap: 100px;
+}
+.mycontents span {
+  font-size: 50px;
+  font-weight: 800;
+  margin-left: 220px;
+}
+.websubmenu,
+.appsubmenu,
+.codingsubmenu,
+.designsubmenu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.websubmenu li,
+.appsubmenu li,
+.codingsubmenu li {
+  position: relative;
+  width: 486px;
+  height: 276px;
+}
+.websubmenu li > a img {
+  object-fit: fill;
+  width: 486px;
+  height: 276px;
+}
+
+.btg {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  color: #fff;
+  transform: translateX(50);
+}
+
+.button {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 20px;
+}
+#coding:hover img {
+  background-color: rgba(255, 255, 255, 0.5);
 }
