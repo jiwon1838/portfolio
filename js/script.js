@@ -105,3 +105,13 @@ navbar.addEventListener("mouseleave", function () {
     console.log("마우스가 네비게이션 바를 벗어나 슬라이드업");
   }
 });
+// 화면 로드 시 텍스트 애니메이션
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.querySelector(".ment h2").classList.add("show");
+  }, 500); // h2가 0.5초 후에 나타나게 합니다.
+
+  setTimeout(() => {
+    document.querySelector(".ment h3").classList.add("show");
+  }, 1000); // h3가 1초 후에 나타나게 합니다.
+});

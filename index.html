@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- parvicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>PORTFOLIO</title>
+    <!-- aos 관련 -->
+    <!-- <link rel="stylesheet" href="js/aos/aos.css" />
+  <script src="js/aos/aos.js"></script> -->
+    <!-- style -->
     <link rel="stylesheet" href="css/nomalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -25,13 +37,13 @@
             <li>
               <a href="#profile">PROFILE</a>
             </li>
-             <li>
+            <li>
               <a href="#design">DESIGN</a>
             </li>
             <li>
               <a href="#coding">CODING</a>
             </li>
-           
+
             <li>
               <a href="#contact">CONTACT</a>
             </li>
@@ -42,18 +54,22 @@
         <div class="home">
           <!-- <div class="bg"></div> -->
           <div class="one"></div>
+          <!-- <h2>SHIN JI WON</h2> -->
           <div class="ment">
-            <h3>UI/UX DESIGNER</h3>
-            <h2>SHIN JI WON</h2>
+            <h3 class="irregular-blink">
+              UI/UX <br />
+              DESIGNER
+            </h3>
           </div>
         </div>
       </div>
-      <!-- main end -->
+    </div>
+    <!-- main end -->
 
-      <!-- profile start -->
+    <!-- profile start -->
 
-      <div class="section">
-        <div id="profile" class="proprofile" data-aos="fade-right">
+    <div class="section">
+      <div id="profile" class="proprofile" data-aos="fade-right">
         <h3 class="profile">PROFILE</h3>
       </div>
       <div class="section1">
@@ -74,11 +90,11 @@
               <img src="images/skill.png" alt="" />
             </div>
             <div class="contact">
-              <p>CONTACT ME <i></i></p>
+              <p>CONTACT ME</p>
               <div class="call">
-              <span> 010-7252-0991 <br />jw1838@naver.com </span>
+                <span> 010-7252-0991 <br />jw1838@naver.com </span>
+              </div>
             </div>
-          </div>
           </div>
         </div>
         <!-- 프로필 사진 -->
@@ -90,79 +106,201 @@
     <div class="section3">
       <!-- 상단영역 -->
       <div class="content">
-        <div class="one1"></div>
-        <span class="work">WORK</span>
-          </div>
-          <!-- 컨텐츠영역 -->
-        <div class="mycontents">
-          <div id="DESIGN" class="webdesign" data-aos="fade-right">
-            <span>WEB</span>
-            <ul class="websubmenu">
-             <li>
-              <a href=""><img src="images/hw.png" alt=""></a>
-            </li>
-            <li>
-              <a href=""><img src="images/publicbeacon.png" alt=""></a>
-            </li>
-            <li>
-              <a href=""><img src="images/veganiety.png" alt=""></a>
-            </li>
-            </ul>
-          </div>
-          <div id="app" class="app" data-aos="fade-right">
-            <span>APP</span>
-            <ul class="appsubmenu">
-             <li>
-              <a href=""><img src="images/app1.png" alt=""></a>
-            </li>
-            <li>
-              <a href=""><img src="images/app2.png" alt=""></a>
-            </li>
-            <li>
-              <a href=""><img src="images/app3.png" alt=""></a>
-            </li>
-            </ul>
-          </div>
-          <div id="coding" class="coding" data-aos="fade-right">
-            <span>CODING</span> 
-            <ul class="codingsubmenu">
-              <li>
-                <a href=""><img src="im" alt=""></a>
-              </li>
-              <li>
-                <a href=""><img src="" alt=""></a>
-              </li>
-              <li>
-                <a href="#kakao"><img src="images/kakaoblog.png" alt=""></a>
-               <div class="btg"><div class="button"><a href="">원본사이트</a></div>
-               <div class="button"><a href="">클론코딩</a></div>
-              </div>
-              </li>
-              
-             
-            </ul>
+        <div class="one1">
+          <span class="work">WORK</span>
         </div>
+      </div>
+      <!-- 컨텐츠영역 -->
+      <div class="mycontents">
+        <!-- web -->
+        <div id="DESIGN" class="webdesign" data-aos="fade-right">
+          <span>WEB</span>
+          <ul class="websubmenu">
+            <li>
+              <a href="">
+                <img src="images/web1.png" alt="" />
+              </a>
+              <div class="hidden-content">
+                <div class="title">한국전력공사</div>
+                <div class="btg">
+                  <div class="button"><a href="#">원본사이트</a></div>
+                  <div class="button">
+                    <a
+                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
+                      >프로토타입</a
+                    >
+                  </div>
+                  <div class="button">
+                    <a href="#">프로세스</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="images/web2.png" alt="" /></a>
+              <div class="hidden-content">
+                <div class="title">퍼블릭비컨</div>
+                <div class="btg">
+                  <div class="button"><a href="#">원본사이트</a></div>
+                  <div class="button">
+                    <a
+                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
+                      >프로토타입</a
+                    >
+                  </div>
+                  <div class="button">
+                    <a href="#">프로세스</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="images/web3.png" alt="" /></a>
+              <div class="hidden-content">
+                <div id="veganiety" class="title">비거니티</div>
+                <div class="btg">
+                  <div class="button"><a href="#">원본사이트</a></div>
+                  <div class="button">
+                    <a
+                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
+                      >프로토타입</a
+                    >
+                  </div>
+                  <div class="button">
+                    <a href="#">프로세스</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- app -->
+        <div id="app" class="app" data-aos="fade-right">
+          <span>APP</span>
+          <ul class="appsubmenu">
+            <li>
+              <a href=""><img src="images/app1.png" alt="" /></a>
+              <div class="hidden-content">
+                <div id="angrymong" class="title">앵그리몽(금융적금)</div>
+                <div class="btg">
+                  <div class="button">
+                    <a
+                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
+                      >프로토타입</a
+                    >
+                  </div>
+                  <div class="button">
+                    <a href="#">프로세스</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="images/app2.png" alt="" /></a>
+              <div class="hidden-content">
+                <div id="booking" class="title">북킹(오디오북)</div>
+                <div class="btg">
+                  <div class="button">
+                    <a
+                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
+                      >프로토타입</a
+                    >
+                  </div>
+                  <div class="button">
+                    <a href="#">프로세스</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="images/app3.png" alt="" /></a>
+              <div class="hidden-content">
+                <div id="witta" class="title">윗타(AI 캘린더)</div>
+                <div class="btg">
+                  <div class="button">
+                    <a
+                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
+                      >프로토타입</a
+                    >
+                  </div>
+                  <div class="button">
+                    <a href="#">프로세스</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- coding -->
+        <div id="coding" class="coding" data-aos="fade-right">
+          <span>CODING</span>
+          <ul class="codingsubmenu">
+            <li>
+              <a href=""><img src="images/coding1.png" alt="" /> </a>
+              <div class="hidden-content">
+                <div id="anichem" class="title">애니켐</div>
+                <div class="btg">
+                  <div class="button"><a href="#">원본사이트</a></div>
+                  <div class="button">
+                    <a
+                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
+                      >클론코딩</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="images/coding2.png" alt="" /></a>
+              <div class="hidden-content">
+                <div id="kakao" class="title">카카오브레인 blog</div>
+                <div class="btg">
+                  <div class="button"><a href="#">원본사이트</a></div>
+                  <div class="button">
+                    <a
+                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
+                      >클론코딩</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href=""><img src="images/coding3.png" alt="" /></a>
+              <div class="hidden-content">
+                <div id="veganietycoding" class="title">비거니티</div>
+                <div class="btg">
+                  <div class="button"><a href="#">원본사이트</a></div>
+                  <div class="button">
+                    <a
+                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
+                      >클론코딩</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- design -->
         <div id="design" class="design" data-aos="fade-right">
-          <span>DESIGN</span> 
+          <span>DESIGN</span>
           <ul class="designsubmenu">
             <li>
-              <a href=""><img src="images/design1.png" alt=""></a>
+              <a href=""><img src="images/design1.png" alt="" /></a>
             </li>
             <li>
-              <a href=""><img src="images/design2.png" alt=""></a>
+              <a href=""><img src="images/design2.png" alt="" /></a>
             </li>
             <li>
-              <a href=""><img src="images/design3.png" alt=""></a>
+              <a href=""><img src="images/design3.png" alt="" /></a>
             </li>
             <li>
-              <a href=""><img src="images/design4.png" alt=""></a>
+              <a href=""><img src="images/design4.png" alt="" /></a>
             </li>
-            
-           
           </ul>
-      </div>
         </div>
-        
+      </div>
     </div>
   </body>
 </html>
