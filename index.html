@@ -4,14 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- parvicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <title>PORTFOLIO</title>
+    <!-- 라이브러리 스크르립트 -->
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
     <!-- aos 관련 -->
     <!-- <link rel="stylesheet" href="js/aos/aos.css" />
   <script src="js/aos/aos.js"></script> -->
@@ -20,287 +38,135 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <div class="wrap">
-      <!-- main start -->
+    <!-- header start -->
+    <div class="header navbar">
+      <ul class="menu">
+        <li>
+          <a href="#home">HOME</a>
+        </li>
+        <li>
+          <a href="#profile">PROFILE</a>
+        </li>
+        <li>
+          <a href="#design">DESIGN</a>
+        </li>
+        <li>
+          <a href="#coding">CODING</a>
+        </li>
+
+        <li>
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+    <!-- header end -->
+
+    <!-- page1 landing page start -->
+    <div id="section" class="section">
+      <div class="typewriter">
+        <p id="typing-text"></p>
+      </div>
+    </div>
+    <!-- page1 end -->
+
+    <!--page2 start-->
+    <div id="section1" class="wrap">
       <div class="section">
-        <!-- header start -->
-        <div class="header">
-          <ul class="menu">
-            <li>
-              <a href="#home">HOME</a>
-            </li>
-            <li>
-              <a href="#profile">PROFILE</a>
-            </li>
-            <li>
-              <a href="#design">DESIGN</a>
-            </li>
-            <li>
-              <a href="#coding">CODING</a>
-            </li>
-
-            <li>
-              <a href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-        <!-- header end -->
-
-        <div class="home">
-          <!-- <div class="bg"></div> -->
-          <div class="one"></div>
-          <!-- <h2>SHIN JI WON</h2> -->
-          <div class="ment">
+        <!-- <div class="bg"></div> -->
+        <a href="#section2" class="one"></a>
+        <!-- <h2>SHIN JI WON</h2> -->
+        <div class="ment">
+          <a class="ment" id="#section2"
+            >
             <h3 class="irregular-blink">
               UI/UX <br />
               DESIGNER
             </h3>
-          </div>
+            </a
+          >
+          <span ng-bind="user.name()"></span>
         </div>
       </div>
-    </div>
-    <!-- main end -->
 
-    <!-- profile start -->
+      <!-- page2 end-->
 
-    <div class="section">
-      <div id="profile" class="proprofile" data-aos="fade-right">
-        <h3 class="profile">PROFILE</h3>
+      <!-- page 3 start -->
+      <div id="section3"class="section">
+        <div id="one3"class="one"></div>
+        <div class="ment1">
+          <h1 class="mainment">도파민 중독 신지원입니다</h1>  
+          <span class="subment">
+            성취감에 중독된 저는 매일 새로운 목표를 향해 나아갑니다. <br>
+성장통도 즐기며, 더 큰 목표를 향해 나아가는 디자이너가 되겠습니다.
+        </span>
+        </div>
+      
+        </div>
       </div>
-      <div class="section1">
-        <div class="section1-1">
-          <div class="mainment">
-            <div class="typewriter">
-              <p id="typing-text"></p>
+      <!-- page 3 end -->
+
+      <!-- page4 profile start -->
+
+      <div id="section2" class="section">  
+        <div id="one4"class="one"></div>
+        <div id="profile" class="proprofile" data-aos="fade-right">
+          <h3 class="profile">PROFILE</h3>
+        </div>
+
+        <div class="section1">   
+          <!-- 프로필 사진 -->
+          <div class="section1-2">
+            <div class="sjwprofile">
+              <img src="images/profile.png" alt="" />
             </div>
-            <span class="subment"
-              >성취감에 중독된 저는 매일 새로운 목표를 향해 나아갑니다.
-              <br />성취감 마저 즐기며, 더 큰 목표를 향해 나아가는 디자이너가
-              되겠습니다.</span
-            >
           </div>
+          <div class="section1-1">
           <div class="index">
-            <div class="skill">
-              <p>SKILL</p>
-              <img src="images/skill.png" alt="" />
-            </div>
             <div class="contact">
-              <p>CONTACT ME</p>
-              <div class="call">
+            <div class="call">  
+                <p>CONTACT ME</p>
                 <span> 010-7252-0991 <br />jw1838@naver.com </span>
               </div>
+              <div class="skill">
+                <p>SKILL</p>
+                <img src="images/skill.svg" alt="" />
+              </div>
+            </div>
             </div>
           </div>
-        </div>
-        <!-- 프로필 사진 -->
-        <div class="section1-2">
-          <img src="images/profile.png" alt="" />
-        </div>
+       </div>
       </div>
-    </div>
-    <div class="section3">
-      <!-- 상단영역 -->
-      <div class="content">
+
+      <div id="section4" class="section">
+        <div class="top">
         <div class="one1">
           <span class="work">WORK</span>
         </div>
-      </div>
-      <!-- 컨텐츠영역 -->
-      <div class="mycontents">
-        <!-- web -->
-        <div id="DESIGN" class="webdesign" data-aos="fade-right">
+        </div>
+        <div class="web">
           <span>WEB</span>
-          <ul class="websubmenu">
-            <li>
-              <a href="">
-                <img src="images/web1.png" alt="" />
-              </a>
-              <div class="hidden-content">
-                <div class="title">한국전력공사</div>
-                <div class="btg">
-                  <div class="button"><a href="#">원본사이트</a></div>
-                  <div class="button">
-                    <a
-                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
-                      >프로토타입</a
-                    >
-                  </div>
-                  <div class="button">
-                    <a href="#">프로세스</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href=""><img src="images/web2.png" alt="" /></a>
-              <div class="hidden-content">
-                <div class="title">퍼블릭비컨</div>
-                <div class="btg">
-                  <div class="button"><a href="#">원본사이트</a></div>
-                  <div class="button">
-                    <a
-                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
-                      >프로토타입</a
-                    >
-                  </div>
-                  <div class="button">
-                    <a href="#">프로세스</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href=""><img src="images/web3.png" alt="" /></a>
-              <div class="hidden-content">
-                <div id="veganiety" class="title">비거니티</div>
-                <div class="btg">
-                  <div class="button"><a href="#">원본사이트</a></div>
-                  <div class="button">
-                    <a
-                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
-                      >프로토타입</a
-                    >
-                  </div>
-                  <div class="button">
-                    <a href="#">프로세스</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- app -->
-        <div id="app" class="app" data-aos="fade-right">
-          <span>APP</span>
-          <ul class="appsubmenu">
-            <li>
-              <a href=""><img src="images/app1.png" alt="" /></a>
-              <div class="hidden-content">
-                <div id="angrymong" class="title">앵그리몽(금융적금)</div>
-                <div class="btg">
-                  <div class="button">
-                    <a
-                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
-                      >프로토타입</a
-                    >
-                  </div>
-                  <div class="button">
-                    <a href="#">프로세스</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href=""><img src="images/app2.png" alt="" /></a>
-              <div class="hidden-content">
-                <div id="booking" class="title">북킹(오디오북)</div>
-                <div class="btg">
-                  <div class="button">
-                    <a
-                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
-                      >프로토타입</a
-                    >
-                  </div>
-                  <div class="button">
-                    <a href="#">프로세스</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href=""><img src="images/app3.png" alt="" /></a>
-              <div class="hidden-content">
-                <div id="witta" class="title">윗타(AI 캘린더)</div>
-                <div class="btg">
-                  <div class="button">
-                    <a
-                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
-                      >프로토타입</a
-                    >
-                  </div>
-                  <div class="button">
-                    <a href="#">프로세스</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- coding -->
-        <div id="coding" class="coding" data-aos="fade-right">
-          <span>CODING</span>
-          <ul class="codingsubmenu">
-            <li>
-              <a href=""><img src="images/coding1.png" alt="" /> </a>
-              <div class="hidden-content">
-                <div id="anichem" class="title">애니켐</div>
-                <div class="btg">
-                  <div class="button"><a href="#">원본사이트</a></div>
-                  <div class="button">
-                    <a
-                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
-                      >클론코딩</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href=""><img src="images/coding2.png" alt="" /></a>
-              <div class="hidden-content">
-                <div id="kakao" class="title">카카오브레인 blog</div>
-                <div class="btg">
-                  <div class="button"><a href="#">원본사이트</a></div>
-                  <div class="button">
-                    <a
-                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
-                      >클론코딩</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href=""><img src="images/coding3.png" alt="" /></a>
-              <div class="hidden-content">
-                <div id="veganietycoding" class="title">비거니티</div>
-                <div class="btg">
-                  <div class="button"><a href="#">원본사이트</a></div>
-                  <div class="button">
-                    <a
-                      href="https://www.figma.com/proto/7mmn9maFvjfzfCxXAYqJtm/%EC%8B%A0%EC%A7%80%EC%9B%90_%ED%95%9C%EA%B5%AD%EC%A0%84%EB%A0%A5%EA%B3%B5%EC%82%AC?node-id=0-1&t=pENu4U3RmGC6sbNm-1"
-                      >클론코딩</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- design -->
-        <div id="design" class="design" data-aos="fade-right">
-          <span>DESIGN</span>
-          <ul class="designsubmenu">
-            <li>
-              <a href=""><img src="images/design1.png" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="images/design2.png" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="images/design3.png" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="images/design4.png" alt="" /></a>
-            </li>
-          </ul>
-        </div>
+          <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
       </div>
+     
     </div>
   </body>
 </html>
